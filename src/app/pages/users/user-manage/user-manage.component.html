@@ -1,0 +1,31 @@
+<mat-card>
+  <h2 *ngIf="mode === 'add'">Add New User</h2>
+  <h2 *ngIf="mode === 'edit'">Edit User</h2>
+  <h2 *ngIf="mode === 'view'">User Details</h2>
+
+  <form *ngIf="user">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="user.name"
+        name="name"
+        [readonly]="mode === 'view'"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Role</mat-label>
+      <input
+        matInput
+        [(ngModel)]="user.role"
+        name="role"
+        [readonly]="mode === 'view'"
+      />
+    </mat-form-field>
+
+    <div *ngIf="mode !== 'view'">
+      <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+    </div>
+  </form>
+</mat-card>

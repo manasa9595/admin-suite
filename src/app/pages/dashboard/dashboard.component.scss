@@ -1,0 +1,72 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.kpi-card {
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+  .label {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  mat-icon {
+    font-size: 24px;
+  }
+
+  &.users {
+    background-color: #1976d2;
+  }
+  &.orders {
+    background-color: #ffa000;
+  }
+  &.revenue {
+    background-color: #43a047;
+  }
+}
+
+.section-card {
+  margin-bottom: 24px;
+  padding: 16px;
+
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  .activity-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    margin-right: 12px;
+  }
+}
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+
+  button {
+    flex: 1;
+  }
+}

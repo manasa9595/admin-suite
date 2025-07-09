@@ -1,59 +1,50 @@
-# AngularMaterialDashboard
+# AdminSuite
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+AdminSuite is a professional admin dashboard built with Angular and Angular Material. It features a modern UI, modular architecture, and reusable components suitable for internal dashboards, admin portals, or analytics platforms.
 
-## Development server
+![App Screenshot](./assets/Dashboard.png)
 
-To start a local development server, run:
+## 🚀 Features
 
-```bash
-ng serve
+- Angular 17 with modern standalone component architecture
+- Angular Material UI with responsive layout
+- Top navigation bar with user info
+- Side navigation with routing integration
+- User table with pagination and action buttons
+- Reusable component for adding, editing, and viewing users
+- Dashboard with KPI cards, activity feed, and quick actions
+- Modular folder structure and lazy loading support
+
+## 🛠️ Tech Stack
+
+- Angular
+- TypeScript
+- SCSS
+- Angular Material
+
+## 📁 Folder Structure
+
+```
+src/
+├── app/
+│   ├── app.component.ts
+│   ├── app.routes.ts
+│   ├── pages/
+│   │   ├── dashboard/
+│   │   ├── users/
+│   │   ├── orders/
+│   │   └── settings/
+│   └── shared/
+│       └── material.module.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📦 Setup Instructions
 
-## Code scaffolding
+1. Clone the repository
+2. Run `npm install`
+3. Run `ng serve`
+4. Open in browser: `http://localhost:4200`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📄 License
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is open for use in personal and professional portfolios.

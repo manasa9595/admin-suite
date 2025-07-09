@@ -1,0 +1,47 @@
+<div class="dashboard-grid">
+  <!-- KPI Cards -->
+  <mat-card class="kpi-card users">
+    <mat-icon>group</mat-icon>
+    <div class="label">Total Users</div>
+    <div class="value">120</div>
+  </mat-card>
+
+  <mat-card class="kpi-card orders">
+    <mat-icon>assignment</mat-icon>
+    <div class="label">Pending Orders</div>
+    <div class="value">32</div>
+  </mat-card>
+
+  <mat-card class="kpi-card revenue">
+    <mat-icon>attach_money</mat-icon>
+    <div class="label">Revenue</div>
+    <div class="value">$24,000</div>
+  </mat-card>
+</div>
+
+<!-- Recent Activity -->
+<mat-card class="section-card">
+  <h3>Recent Activity</h3>
+  <ul class="activity-list">
+    <li><strong>Alice</strong> created a new user</li>
+    <li><strong>Bob</strong> updated an order</li>
+    <li><strong>System</strong> sent billing email</li>
+  </ul>
+</mat-card>
+
+<!-- Quick Actions -->
+<mat-card class="section-card">
+  <h3>Quick Actions</h3>
+  <div class="quick-actions">
+    <button
+      mat-stroked-button
+      color="primary"
+      [routerLink]="ROUTES.USERS_MANAGE"
+    >
+      Add User
+    </button>
+    <button mat-stroked-button color="accent" [routerLink]="ROUTES.ORDERS">
+      View Orders
+    </button>
+  </div>
+</mat-card>

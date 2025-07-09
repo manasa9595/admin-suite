@@ -1,0 +1,11 @@
+<mat-card>
+  <form>
+    <mat-form-field>
+      <mat-label>Email Notifications</mat-label>
+      <mat-select [(ngModel)]="setting.value" name="emailNotifications">
+        <mat-option value="on">On</mat-option>
+        <mat-option value="off">Off</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-card>
